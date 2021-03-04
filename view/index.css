@@ -1,0 +1,106 @@
+/* 
+#### Text
+- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%)
+#### Gradient
+Background gradient:
+- Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%)
+### Neutral
+#### Text
+- Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%)
+#### Dividers
+- Light grayish blue: hsl(240, 5%, 91%) */
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient( hsl(276, 2%, 46%) , hsl(240, 73%, 65%));
+    height: 97vh;
+    width: 98vw;
+    color:hsl(238, 29%, 16%) ;
+
+    
+
+}
+
+.card{
+    background-color: white ;
+    width: 55vw ;
+    height: 62vh;
+    border: 0;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    left: 23%;
+    top: 20%;
+    font-size: 0.9rem;
+    overflow: hidden;
+    
+    
+}
+
+.pattern{
+    display: inline-block;
+    position: absolute;
+    display: none;
+}
+
+.section{
+    width: 50%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding-right: 10%;
+    padding-top: 4%;
+    
+    
+}
+
+h2{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.question{
+    display: inline-block;
+    margin-top: 10px;
+}
+.btn{
+    background-color: white;
+    color:hsl(14, 88%, 65%) ;
+    font-size: 1rem;
+    font-weight: 600;
+    border:0;
+    
+}
+hr{
+    color: teal;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+}
+.containerQ{
+display: flex;
+justify-content: space-between;
+}
+
+.woman{
+    
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 62%;
+    width: 45%;
+    overflow: hidden;
+    z-index: 0;
+   
+}
+.box{
+    
+    position: absolute;
+    display: inline-block;
+    left:15% ;
+    top: 45%;
+    
+}
