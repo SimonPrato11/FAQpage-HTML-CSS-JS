@@ -19,22 +19,19 @@ body{
     height: 97vh;
     width: 98vw;
     color:hsl(238, 29%, 16%) ;
-
-    
-
 }
 
 .card{
     background-color: white ;
-    width: 55vw ;
-    height: 62vh;
+    width: 68vw ;
+    height: 74vh;
     border: 0;
     border-radius: 10px;
     position: relative;
     display: inline-block;
     display: flex;
-    left: 23%;
-    top: 20%;
+    left: 16%;
+    top: 13%;
     font-size: 0.9rem;
     overflow: hidden;
     
@@ -47,42 +44,25 @@ body{
     display: none;
 }
 
-.section{
-    width: 50%;
+.section1{
+    width: 47%;
     height: 100%;
     border: 0;
     border-radius: 10px;
-    padding-right: 10%;
-    padding-top: 4%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}  
+.section2{
+    width: 53%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding-right: 5%;
+    padding-top: 6%;
+    padding-bottom: 5%;
     
     
-}
-
-h2{
-    font-weight: 700;
-    font-size: 1.6rem;
-}
-.question{
-    display: inline-block;
-    margin-top: 10px;
-}
-.btn{
-    background-color: white;
-    color:hsl(14, 88%, 65%) ;
-    font-size: 1rem;
-    font-weight: 600;
-    border:0;
-    
-}
-hr{
-    color: teal;
-    width: 100%;
-    margin-top: 0;
-    margin-left: 0;
-}
-.containerQ{
-display: flex;
-justify-content: space-between;
 }
 
 .woman{
@@ -100,7 +80,111 @@ justify-content: space-between;
     
     position: absolute;
     display: inline-block;
-    left:15% ;
-    top: 45%;
+    top: 48%;
+    left: 8%;
+    
     
 }
+
+/*TEXT A&Qs**************************/
+
+.question:hover{
+    color:hsl(14, 88%, 65%)  ;
+}
+
+.btn{
+    background-color: white;
+    border-radius: 3px;
+    border: 0;
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    color:hsl(14, 88%, 65%) ;
+    font-weight: 700;
+}
+
+
+/*pasive sate**************/
+
+.question{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.answer{
+    display: none;
+}
+
+/*ACTIVE STATE*****************/
+.questionAct{
+    font-weight: 700;
+    font-size: 0.9em;
+    
+}
+
+.answerAct{
+    display: block;
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+.btnAct{
+    background-color: white;
+    border-radius: 3px;
+    border: 0;
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    color:hsl(14, 88%, 65%) ;
+    font-weight: 700;
+    transform: rotate(180deg);
+}
+
+/*MEDIA QUERIES**************/
+
+@media(max-width:800px){.card{
+        display: block;
+        height: 80vh;
+        overflow: inherit;
+        
+}}
+
+@media(max-width:800px){.section1{
+    width: 100%;
+    height: 10%;
+    border: 0;
+    border-radius: 10px;
+    padding-bottom: 0;
+    
+    
+}}
+@media(max-width:800px){.section2{
+    width: 87%;
+    height: 90%;
+    border: 0;
+    border-radius: 10px;
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-top: 0%;
+    padding-bottom: 5%;
+    
+}}
+
+
+
+@media(max-width:800px){.woman{
+    display: none;
+}}
+
+@media(max-width:800px){.box{
+    display: none;
+}}
+
+@media(max-width:800px){.h2{
+    text-align: center;
+    font-size: 2rem;
+
+
+}}
+
