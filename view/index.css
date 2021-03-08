@@ -16,9 +16,10 @@ Background gradient:
 body{
     font-family: 'Kumbh Sans', sans-serif;
     background: linear-gradient( hsl(276, 2%, 46%) , hsl(240, 73%, 65%));
-    height: 97vh;
+    height: 100vh;
     width: 98vw;
     color:hsl(238, 29%, 16%) ;
+    margin: 0;
 }
 
 .card{
@@ -65,7 +66,7 @@ body{
     
 }
 
-.woman{
+.women{
     
     display: inline-block;
     position: absolute;
@@ -74,15 +75,18 @@ body{
     width: 45%;
     overflow: hidden;
     z-index: 0;
-   
+}
+
+.womenMobile{
+    display: none;
 }
 .box{
     
     position: absolute;
     display: inline-block;
-    top: 48%;
+    bottom: 32%;
     left: 8%;
-    
+    width: 15%;
     
 }
 
@@ -145,8 +149,9 @@ body{
 
 @media(max-width:800px){.card{
         display: block;
-        height: 80vh;
-        overflow: inherit;
+        height: 77%;
+        overflow: hidden;
+        padding-bottom: 0;
         
 }}
 
@@ -171,20 +176,26 @@ body{
     
 }}
 
-
-
-@media(max-width:800px){.woman{
-    display: none;
-}}
-
 @media(max-width:800px){.box{
     display: none;
 }}
 
 @media(max-width:800px){.h2{
     text-align: center;
+    margin-top: 8%;
     font-size: 2rem;
+}}
 
+@media(max-width:800px){.women{
+    display: none;
+}}
 
+@media(max-width:800px){.womenMobile{
+    display: inline-block;
+    position: absolute;
+    bottom: 75%;
+    left: 30%;
+    z-index: 1;
+    width: 35%;
 }}
 
